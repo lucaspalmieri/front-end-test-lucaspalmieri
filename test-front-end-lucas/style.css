@@ -1,0 +1,96 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    background-color: #648cff;
+}
+
+.header_content{
+    display: block;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    padding-top: 5px;   
+}
+
+.header_content ul{
+    display: flex;
+    list-style: none;
+}
+
+.header_content li{
+    margin-right: 100px;
+}
+
+.first_screen{
+    background-color: #648cff;
+    background-image: url("wave1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.content_first_screen{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.features, .widgets, .screenshots, .reviews, .download_content{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.right_content h1{
+    color: white;
+    width: 300px;
+}
+
+.right_content p{
+    color: white;
+    width: 350px;
+}
+
+.right_content button{
+    width: 100px;
+    height: 40px;
+    background-color: #fc6a42;
+    border-color: #fc6a42;
+    border-radius: 5px;
+}
+
+.right_content button a{
+    text-decoration: none;
+    color: white;
+}
+
+.right_content .features_btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4466c9;
+    border-color: #4466c9;
+}
+
+.features{
+    padding-top: 100px;
+}
+
+.features h2, .widgets h2, .screenshots h2, .reviews h2{
+    color: #648cff;
+    text-transform: uppercase;
+}
+
+.screenshots .screen1 h6, .screen2 h6, .screen3 h6{
+    color: #648cff;
+}
+
+
+.download{
+    background-color: #648cff;
+}
+
+.download .download_content h2, .download .download_content p{
+    color: white;
+}
