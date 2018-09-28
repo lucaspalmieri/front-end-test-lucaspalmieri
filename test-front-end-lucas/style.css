@@ -16,17 +16,34 @@ nav ul li{
     margin-right: 75px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.social_media_icons a{
+    text-decoration: none;
+    color: white;
+}
+
 
 .first_screen{
     background-color: #648cff;
     background-image: url("wave1.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: bottom;
     padding-top: 100px;
     padding-bottom: 150px;
+    animation: animatedBackground 4s linear infinite;
 }
 
-
+@keyframes animatedBackground {
+	from { background-position: 0 100%; }
+    to { background-position: 10% 100%; }
+    background-position: bottom;
+}
 
 .conteudo_direita{
     position: relative;
@@ -49,11 +66,14 @@ nav ul li{
     background-color: #fc6a42;
     border-color: hsl(13, 97%, 62%);
     border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
 
-.conteudo_direita button a{
+.conteudo_direita a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .conteudo_direita .features_btn{
@@ -69,6 +89,29 @@ nav ul li{
     padding-top: 100px;
 }
 
+.features .usability{
+    transition: transform .2s;
+}
+
+.features .usability:hover{
+    transform: scale(1.1);
+}
+
+.features .paralax{
+    transition: transform .2s;
+}
+
+.features .paralax:hover{
+    transform: scale(1.1);
+}
+
+.features .unlimites{
+    transition: transform .2s;
+}
+
+.features .unlimites:hover{
+    transform: scale(1.1);
+}
 
 .features p{
     margin-bottom: 70px;
@@ -198,6 +241,11 @@ nav ul li{
 
 .dnwld{
     background-color: #648cff;
+    background-image: url('phones_download.png');
+    background-position: right; 
+    background-position-y: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .download .download_conteudo{
@@ -211,7 +259,7 @@ nav ul li{
 
 footer{
     height: 250px;
-    background-color: rgb(72, 50, 153);
+    background-color: #353854;
 }
 
 footer ul li{
@@ -234,7 +282,7 @@ footer .footer_conteudo{
 }
 
 footer .footer_conteudo .fun{
-    color: orangered;
+    color: #fc6a42;
 }
 
 footer .footer_conteudo .weather{
@@ -293,4 +341,66 @@ footer .footer_conteudo .weather{
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+
+  @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+  .sol_img{
+      position: relative;
+      top: 100px;
+      right: 30px;
+      width: 60x;
+      height: 60px;
+      transform: translatey(0px);
+	  animation: float 6s ease-in-out infinite;
+  }
+
+  .nove_img{
+    position: relative;
+    top: 20px;
+    left: 5px;
+    width: 40x;
+    height: 40px;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .london_img{
+    position: relative;
+    top: 200px;
+    width: 60x;
+    height: 60px;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .rio_img{
+    position: relative;
+    top: 400px;
+    right: 80px;
+    width: 40x;
+    height: 40px;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .drag_drop{
+  }
+
+  #drop{
+    width: 344px;
+    height: 142px;
+    border: 1px dashed #aaaaaa;
+    border-radius: 10px;
   }
