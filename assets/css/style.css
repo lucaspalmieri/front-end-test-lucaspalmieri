@@ -31,7 +31,7 @@ nav ul li{
 
 .first_screen{
     background-color: #648cff;
-    background-image: url("wave1.png");
+    background-image: url("../images/wave1.png");
     background-repeat: repeat-x;
     background-position: bottom;
     padding-top: 100px;
@@ -89,6 +89,10 @@ nav ul li{
     padding-top: 100px;
 }
 
+.features h2, .features p{
+    text-align: center;
+}
+
 .features .usability{
     transition: transform .2s;
 }
@@ -124,10 +128,15 @@ nav ul li{
 
 .widgets{
     margin-top: 100px;
+    text-align: center;
 }
 
 .screenshots{
     margin-top: 100px;
+}
+
+.screenshots h2,.screenshots p{
+    text-align: center;
 }
 
 .screenshots .screen1 h6, .screen2 h6, .screen3 h6{
@@ -241,7 +250,7 @@ nav ul li{
 
 .dnwld{
     background-color: #648cff;
-    background-image: url('phones_download.png');
+    background-image: url('../images/phones_download.png');
     background-position: right; 
     background-position-y: 400px;
     background-attachment: fixed;
@@ -270,12 +279,11 @@ footer ul li{
 
 footer ul li a{
     text-decoration: none;
-    color: white;
+    color: #a5a5b9;
 }
 
 footer .footer_conteudo{
     display: block;
-    max-width: 1000px;
     margin: auto;
     color: white;
     padding-top: 100px;
@@ -294,9 +302,7 @@ footer .footer_conteudo .weather{
     display: inline-block;
 }
 
-.footer_content li{
-    margin-right: 100px;
-}
+
 
 @media (min-width: 320px){
     .nova_classe {
@@ -321,6 +327,10 @@ footer .footer_conteudo .weather{
 
     .screen3_right_conteudo{
         margin-top: 20px;
+    }
+
+    .circle_cloudy, .cloudy_circle{
+        display: none;
     }
 }
 
@@ -395,12 +405,16 @@ footer .footer_conteudo .weather{
     animation: float 6s ease-in-out infinite;
   }
 
-  .drag_drop{
-  }
 
   #drop{
     width: 344px;
     height: 142px;
     border: 1px dashed #aaaaaa;
     border-radius: 10px;
+  }
+
+  small{
+      float: right;
+      padding-bottom: 50px;
+      color: #4e527a;
   }
